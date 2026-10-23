@@ -8,6 +8,7 @@
   "plugins": [
     {
       "name": "telegram-bot-development",
+      "displayName": "Telegram Bot Development",
       "description": "Build, review and debug Telegram bots and Mini Apps against the live Bot API: the agent checks the official docs and the installed library before any call",
       "category": "development",
       "homepage": "https://github.com/nyxandro/telegram-bot-development-skill",
@@ -22,6 +23,7 @@
     },
     {
       "name": "t-invest",
+      "displayName": "T-Invest",
       "description": "Gives the agent access to your T-Invest brokerage account through the T-Invest API: portfolio data, analytics and operations on your command, answered from the real account, not from memory",
       "category": "finance",
       "homepage": "https://github.com/nyxandro/t-invest-skill",
@@ -33,6 +35,7 @@
     },
     {
       "name": "property-testing",
+      "displayName": "Property-Based Testing",
       "description": "Property-based tests with fast-check and Hypothesis: the strongest property, honest generators, order-of-arrival properties, failure triage",
       "category": "testing",
       "homepage": "https://github.com/nyxandro/property-testing-skill",
@@ -47,6 +50,7 @@
     },
     {
       "name": "issue-register",
+      "displayName": "Issue Register",
       "description": "Revise a project's register of open problems against the code: cut what is closed, keep one file, report",
       "category": "productivity",
       "homepage": "https://github.com/nyxandro/issue-register-skill",
@@ -61,6 +65,7 @@
     },
     {
       "name": "goal-rules",
+      "displayName": "Goal Rules",
       "description": "Finish a /goal task while the owner is away: no questions, recorded decisions, a hard stop-list, short commands, a written report",
       "category": "productivity",
       "homepage": "https://github.com/nyxandro/goal-rules-skill",
@@ -75,6 +80,7 @@
     },
     {
       "name": "prod-recon",
+      "displayName": "Prod Recon",
       "description": "Read-only reconnaissance of prod or stage: find the way in, confirm the running commit, read logs and the database, report and stop",
       "category": "devops",
       "homepage": "https://github.com/nyxandro/prod-recon-skill",
@@ -89,6 +95,7 @@
     },
     {
       "name": "session-handoff",
+      "displayName": "Session Handoff",
       "description": "Carry unfinished work from one agent session to the next with one verified document",
       "category": "productivity",
       "homepage": "https://github.com/nyxandro/session-handoff-skill",
@@ -103,6 +110,7 @@
     },
     {
       "name": "sparring",
+      "displayName": "Sparring",
       "description": "Model-vs-model sparring for plans, reviews and second opinions, with Claude, Codex and tmux-backed CLI agents",
       "category": "productivity",
       "homepage": "https://github.com/nyxandro/sparring-skill",

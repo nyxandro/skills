@@ -1,8 +1,8 @@
 # nyxandro skills
 
-A catalog of my agent skills for Claude Code. Each skill lives and is updated in its own
-repository; this repository only lists them, so that Claude Code can install any of them as a
-plugin from one place.
+A Claude Code plugin marketplace with my agent skills. Each skill lives and is updated in its
+own repository; this repository only lists them, so that Claude Code can install any of them as
+a plugin from one place.
 
 ## Install
 
