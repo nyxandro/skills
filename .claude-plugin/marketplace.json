@@ -1,0 +1,115 @@
+{
+  "name": "nyxandro",
+  "description": "Agent skills by nyxandro. Each skill lives and is updated in its own repository; this catalog lists them so Claude Code can install any of them as a plugin.",
+  "owner": {
+    "name": "nyxandro",
+    "url": "https://github.com/nyxandro"
+  },
+  "plugins": [
+    {
+      "name": "telegram-bot-development",
+      "description": "Build, review and debug Telegram bots and Mini Apps against the live Bot API: the agent checks the official docs and the installed library before any call",
+      "category": "development",
+      "homepage": "https://github.com/nyxandro/telegram-bot-development-skill",
+      "source": {
+        "source": "github",
+        "repo": "nyxandro/telegram-bot-development-skill"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "t-invest",
+      "description": "Gives the agent access to your T-Invest brokerage account through the T-Invest API: portfolio data, analytics and operations on your command, answered from the real account, not from memory",
+      "category": "finance",
+      "homepage": "https://github.com/nyxandro/t-invest-skill",
+      "source": {
+        "source": "github",
+        "repo": "nyxandro/t-invest-skill"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "property-testing",
+      "description": "Property-based tests with fast-check and Hypothesis: the strongest property, honest generators, order-of-arrival properties, failure triage",
+      "category": "testing",
+      "homepage": "https://github.com/nyxandro/property-testing-skill",
+      "source": {
+        "source": "github",
+        "repo": "nyxandro/property-testing-skill"
+      },
+      "license": "MIT",
+      "skills": [
+        "./property-testing"
+      ]
+    },
+    {
+      "name": "issue-register",
+      "description": "Revise a project's register of open problems against the code: cut what is closed, keep one file, report",
+      "category": "productivity",
+      "homepage": "https://github.com/nyxandro/issue-register-skill",
+      "source": {
+        "source": "github",
+        "repo": "nyxandro/issue-register-skill"
+      },
+      "license": "MIT",
+      "skills": [
+        "./issue-register"
+      ]
+    },
+    {
+      "name": "goal-rules",
+      "description": "Finish a /goal task while the owner is away: no questions, recorded decisions, a hard stop-list, short commands, a written report",
+      "category": "productivity",
+      "homepage": "https://github.com/nyxandro/goal-rules-skill",
+      "source": {
+        "source": "github",
+        "repo": "nyxandro/goal-rules-skill"
+      },
+      "license": "MIT",
+      "skills": [
+        "./goal-rules"
+      ]
+    },
+    {
+      "name": "prod-recon",
+      "description": "Read-only reconnaissance of prod or stage: find the way in, confirm the running commit, read logs and the database, report and stop",
+      "category": "devops",
+      "homepage": "https://github.com/nyxandro/prod-recon-skill",
+      "source": {
+        "source": "github",
+        "repo": "nyxandro/prod-recon-skill"
+      },
+      "license": "MIT",
+      "skills": [
+        "./prod-recon"
+      ]
+    },
+    {
+      "name": "session-handoff",
+      "description": "Carry unfinished work from one agent session to the next with one verified document",
+      "category": "productivity",
+      "homepage": "https://github.com/nyxandro/session-handoff-skill",
+      "source": {
+        "source": "github",
+        "repo": "nyxandro/session-handoff-skill"
+      },
+      "license": "MIT",
+      "skills": [
+        "./session-handoff"
+      ]
+    },
+    {
+      "name": "sparring",
+      "description": "Model-vs-model sparring for plans, reviews and second opinions, with Claude, Codex and tmux-backed CLI agents",
+      "category": "productivity",
+      "homepage": "https://github.com/nyxandro/sparring-skill",
+      "source": {
+        "source": "github",
+        "repo": "nyxandro/sparring-skill"
+      },
+      "skills": [
+        "./sparring"
+      ]
+    }
+  ]
+}
