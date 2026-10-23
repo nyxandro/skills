@@ -15,7 +15,10 @@
         "source": "github",
         "repo": "nyxandro/telegram-bot-development-skill"
       },
-      "license": "MIT"
+      "license": "MIT",
+      "skills": [
+        "./telegram-bot-development"
+      ]
     },
     {
       "name": "t-invest",
