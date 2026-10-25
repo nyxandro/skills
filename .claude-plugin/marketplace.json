@@ -121,6 +121,21 @@
       "skills": [
         "./sparring"
       ]
+    },
+    {
+      "name": "skill-picker",
+      "displayName": "Skill Picker",
+      "description": "Pick, vet and install a project's agent skills: the stack by layers, the risk of outdated code per technology, every candidate read before it is recommended, one coverage table",
+      "category": "development",
+      "homepage": "https://github.com/nyxandro/skill-picker-skill",
+      "source": {
+        "source": "github",
+        "repo": "nyxandro/skill-picker-skill"
+      },
+      "license": "MIT",
+      "skills": [
+        "./skill-picker"
+      ]
     }
   ]
 }

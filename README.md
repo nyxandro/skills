@@ -38,6 +38,7 @@ your shell, or turn on auto-update for the catalog under `/plugin` → Marketpla
 | `prod-recon` | Read-only reconnaissance of prod or stage: find the way in, confirm the running commit, read logs and the database, report and stop | [prod-recon-skill](https://github.com/nyxandro/prod-recon-skill) |
 | `session-handoff` | Carry unfinished work from one agent session to the next with one verified document | [session-handoff-skill](https://github.com/nyxandro/session-handoff-skill) |
 | `sparring` | Model-vs-model sparring for plans, reviews and second opinions, with Claude, Codex and tmux-backed CLI agents | [sparring-skill](https://github.com/nyxandro/sparring-skill) |
+| `skill-picker` | Pick, vet and install a project's agent skills: the stack by layers, the risk of outdated code per technology, every candidate read before it is recommended, one coverage table | [skill-picker-skill](https://github.com/nyxandro/skill-picker-skill) |
 
 Each skill's own README says what it needs and how to use it.
 
