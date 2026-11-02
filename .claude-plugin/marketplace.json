@@ -136,6 +136,21 @@
       "skills": [
         "./skill-picker"
       ]
+    },
+    {
+      "name": "feature-blueprint",
+      "displayName": "Feature Blueprint",
+      "description": "Design a feature before code: research-backed decisions sized to the project, how it works for people and inside, a step-by-step plan with tests; only product-changing forks go to the owner",
+      "category": "development",
+      "homepage": "https://github.com/nyxandro/feature-blueprint-skill",
+      "source": {
+        "source": "github",
+        "repo": "nyxandro/feature-blueprint-skill"
+      },
+      "license": "MIT",
+      "skills": [
+        "./feature-blueprint"
+      ]
     }
   ]
 }
