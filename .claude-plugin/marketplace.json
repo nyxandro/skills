@@ -118,6 +118,7 @@
         "source": "github",
         "repo": "nyxandro/sparring-skill"
       },
+      "license": "MIT",
       "skills": [
         "./sparring"
       ]
