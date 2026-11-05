@@ -1,59 +1,96 @@
+<div align="center">
+
 # nyxandro skills
 
-A Claude Code plugin marketplace with my agent skills. Each skill lives and is updated in its
-own repository; this repository only lists them, so that Claude Code can install any of them as
-a plugin from one place.
+**Agent skills for Claude Code, Codex, OpenCode and Cursor. Install any of them as a Claude Code plugin from one catalog.**
+
+[![Validate catalog](https://github.com/nyxandro/skills/actions/workflows/validate.yml/badge.svg)](https://github.com/nyxandro/skills/actions/workflows/validate.yml)
+[![License](https://img.shields.io/github/license/nyxandro/skills)](LICENSE)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-SKILL.md-6f42c1)](https://agentskills.io/specification)
+[![Claude Code marketplace](https://img.shields.io/badge/Claude%20Code-marketplace-d97757)](#install)
+
+**English** · [Русский](README.ru.md)
+
+</div>
+
+A Claude Code plugin marketplace with my agent skills. Each skill lives in its own repository, with
+its own versions, releases and changelog. This repository only lists them, so Claude Code can
+install any of them from one place. The same skills work in Codex, OpenCode, Cursor and other
+agents that read Agent Skills.
 
 ## Install
 
-Add the catalog once, then install the skills you need. In a Claude Code session:
+| Agent | Command |
+|---|---|
+| Claude Code 2.1.275 or later | `/plugin install <skill> --marketplace nyxandro/skills` |
+| Older Claude Code | `/plugin marketplace add nyxandro/skills`, then `/plugin install <skill>@nyxandro` |
+| Codex, OpenCode, Cursor and others | `npx skills add nyxandro/<skill>-skill` |
 
-```text
-/plugin marketplace add nyxandro/skills
-/plugin install telegram-bot-development@nyxandro
-/plugin install prod-recon@nyxandro
-```
+Replace `<skill>` with a name from the table below, for example
+`/plugin install prod-recon --marketplace nyxandro/skills`. Every installed skill adds its
+description to every session, so install only the ones you use.
 
-On Claude Code 2.1.275 or later, one command adds the catalog and installs a skill:
+<details>
+<summary>Updates</summary>
 
-```text
-/plugin install telegram-bot-development --marketplace nyxandro/skills
-```
+<br>
 
-Every installed skill adds its description to every session, so install the ones you use.
+The catalog pins no versions, so every commit to a skill's repository reaches plugin users as an
+update. Run `claude plugin marketplace update nyxandro` and then
+`claude plugin update <skill>@nyxandro` in your shell, or turn on auto-update for the catalog under
+`/plugin` → Marketplaces.
 
-No version is pinned: every commit to a skill's repository is a new version. To take it, run
-`claude plugin marketplace update nyxandro` and then `claude plugin update <skill>@nyxandro` in
-your shell, or turn on auto-update for the catalog under `/plugin` → Marketplaces.
+</details>
 
 ## Skills
 
-| Skill | What it does | Repository |
-| --- | --- | --- |
-| `telegram-bot-development` | Build, review and debug Telegram bots and Mini Apps against the live Bot API: the agent checks the official docs and the installed library before any call | [telegram-bot-development-skill](https://github.com/nyxandro/telegram-bot-development-skill) |
-| `t-invest` | Gives the agent access to your T-Invest brokerage account: portfolio data, analytics and operations on your command, answered from the real account | [t-invest-skill](https://github.com/nyxandro/t-invest-skill) |
-| `property-testing` | Property-based tests with fast-check and Hypothesis: the strongest property, honest generators, failure triage | [property-testing-skill](https://github.com/nyxandro/property-testing-skill) |
-| `issue-register` | Revise a project's register of open problems against the code: cut what is closed, keep one file, report | [issue-register-skill](https://github.com/nyxandro/issue-register-skill) |
-| `goal-rules` | Finish a `/goal` task while the owner is away: no questions, recorded decisions, a hard stop-list, a written report | [goal-rules-skill](https://github.com/nyxandro/goal-rules-skill) |
-| `prod-recon` | Read-only reconnaissance of prod or stage: find the way in, confirm the running commit, read logs and the database, report and stop | [prod-recon-skill](https://github.com/nyxandro/prod-recon-skill) |
-| `session-handoff` | Carry unfinished work from one agent session to the next with one verified document | [session-handoff-skill](https://github.com/nyxandro/session-handoff-skill) |
-| `sparring` | Model-vs-model sparring for plans, reviews and second opinions, with Claude, Codex and tmux-backed CLI agents | [sparring-skill](https://github.com/nyxandro/sparring-skill) |
-| `skill-picker` | Pick, vet and install a project's agent skills: the stack by layers, the risk of outdated code per technology, every candidate read before it is recommended, one coverage table | [skill-picker-skill](https://github.com/nyxandro/skill-picker-skill) |
-| `feature-blueprint` | Design a feature before code: research-backed decisions sized to the project, how it works for people and inside, a step-by-step plan with tests; only product-changing forks go to the owner | [feature-blueprint-skill](https://github.com/nyxandro/feature-blueprint-skill) |
+**Planning and quality**
 
-Each skill's own README says what it needs and how to use it.
+| Skill | What it does | Version |
+|---|---|---|
+| [feature-blueprint](https://github.com/nyxandro/feature-blueprint-skill) | Writes the feature spec and the implementation plan before any code, with research behind every decision and questions only about what changes the product | ![release](https://img.shields.io/github/v/release/nyxandro/feature-blueprint-skill?label=) |
+| [property-testing](https://github.com/nyxandro/property-testing-skill) | Property-based tests with fast-check and Hypothesis, with honest generators and proof that each test can fail | ![release](https://img.shields.io/github/v/release/nyxandro/property-testing-skill?label=) |
+| [sparring](https://github.com/nyxandro/sparring-skill) | A second opinion from Claude or Codex on a plan, architecture or code, argued over several turns | ![release](https://img.shields.io/github/v/release/nyxandro/sparring-skill?label=) |
+| [skill-picker](https://github.com/nyxandro/skill-picker-skill) | Picks, vets and installs the skills your project's stack needs and shows what's covered | ![release](https://img.shields.io/github/v/release/nyxandro/skill-picker-skill?label=) |
 
-## Other agents
+**Running a project**
 
-OpenCode and other agents that read skill folders: take the skill from its repository. Each
-README there says how, and most offer a downloadable `.skill` archive.
+| Skill | What it does | Version |
+|---|---|---|
+| [prod-recon](https://github.com/nyxandro/prod-recon-skill) | Read-only check of prod or stage. Finds the server, reads logs and the database, reports and fixes nothing | ![release](https://img.shields.io/github/v/release/nyxandro/prod-recon-skill?label=) |
+| [issue-register](https://github.com/nyxandro/issue-register-skill) | Keeps the list of open problems true to the code, in one file, with only what's left to do | ![release](https://img.shields.io/github/v/release/nyxandro/issue-register-skill?label=) |
+| [session-handoff](https://github.com/nyxandro/session-handoff-skill) | Carries unfinished work to a new agent session in one document checked against the repository | ![release](https://img.shields.io/github/v/release/nyxandro/session-handoff-skill?label=) |
+| [goal-rules](https://github.com/nyxandro/goal-rules-skill) | Lets the agent finish a long `/goal` task while you're away, with recorded decisions and a stop-list | ![release](https://img.shields.io/github/v/release/nyxandro/goal-rules-skill?label=) |
 
-## Repository layout
+**Domains**
+
+| Skill | What it does | Version |
+|---|---|---|
+| [telegram-bot-development](https://github.com/nyxandro/telegram-bot-development-skill) | Telegram bots and Mini Apps against the live Bot API, checking the docs and your installed library before any call | ![release](https://img.shields.io/github/v/release/nyxandro/telegram-bot-development-skill?label=) |
+| [t-invest](https://github.com/nyxandro/t-invest-skill) | Access to your T-Invest brokerage account. Portfolio, returns, analytics and trades on your command | ![release](https://img.shields.io/github/v/release/nyxandro/t-invest-skill?label=) |
+
+Each skill's README says what it needs and how to use it.
+
+<details>
+<summary>How the catalog works</summary>
+
+<br>
+
+- `.claude-plugin/marketplace.json` has one entry per skill that points to the skill's own
+  repository. Claude Code reads it when you add the catalog.
+- On every push, GitHub runs `claude plugin validate --strict` on the catalog, so a broken entry
+  can't quietly break installs for everyone.
+- Versions, releases and changelogs live in each skill's repository, not here.
 
 ```text
-.claude-plugin/marketplace.json   the catalog: one entry per skill, pointing to its repository
+.claude-plugin/marketplace.json   the catalog, one entry per skill
+.github/workflows/validate.yml    the catalog check on every push
+README.md, README.ru.md           this page in English and in Russian
 ```
+
+</details>
 
 ## License
 
-MIT, for the files of this repository. It does not cover the skills: see each skill's repository.
+[MIT](LICENSE), for the files of this repository. It doesn't cover the skills themselves, see each
+skill's repository.
