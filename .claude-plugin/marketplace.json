@@ -139,6 +139,21 @@
       ]
     },
     {
+      "name": "materials-intake",
+      "displayName": "Materials Intake",
+      "description": "Take in a project's incoming materials: find what is new, file it in inbox/, keep secrets out of git, one inventory and one digest of who decided what, contradictions and open questions",
+      "category": "productivity",
+      "homepage": "https://github.com/nyxandro/materials-intake-skill",
+      "source": {
+        "source": "github",
+        "repo": "nyxandro/materials-intake-skill"
+      },
+      "license": "MIT",
+      "skills": [
+        "./materials-intake"
+      ]
+    },
+    {
       "name": "feature-blueprint",
       "displayName": "Feature Blueprint",
       "description": "Design a feature before code: research-backed decisions sized to the project, how it works for people and inside, a step-by-step plan with tests; only product-changing forks go to the owner",
@@ -151,6 +166,9 @@
       "license": "MIT",
       "skills": [
         "./feature-blueprint"
+      ],
+      "dependencies": [
+        "materials-intake"
       ]
     }
   ]

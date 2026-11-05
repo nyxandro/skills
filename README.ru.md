@@ -61,6 +61,7 @@
 | [issue-register](https://github.com/nyxandro/issue-register-skill) | Держит список открытых проблем в согласии с кодом, в одном файле и только с тем, что осталось | ![release](https://img.shields.io/github/v/release/nyxandro/issue-register-skill?label=) |
 | [session-handoff](https://github.com/nyxandro/session-handoff-skill) | Передаёт незаконченную работу в новую сессию одним документом, сверенным с репозиторием | ![release](https://img.shields.io/github/v/release/nyxandro/session-handoff-skill?label=) |
 | [goal-rules](https://github.com/nyxandro/goal-rules-skill) | Даёт агенту довести длинную задачу `/goal` до конца без вас, с записанными решениями и стоп-листом | ![release](https://img.shields.io/github/v/release/nyxandro/goal-rules-skill?label=) |
+| [materials-intake](https://github.com/nyxandro/materials-intake-skill) | Принимает входящие материалы проекта. Раскладывает новое в `inbox/`, не пускает секреты в git и ведёт одну опись и одну сводку решений, противоречий и открытых вопросов | ![release](https://img.shields.io/github/v/release/nyxandro/materials-intake-skill?label=) |
 
 **Предметные**
 
