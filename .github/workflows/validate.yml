@@ -1,0 +1,17 @@
+name: Validate catalog
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      # The latest Claude Code on purpose: the check should accept what users' Claude Code accepts.
+      - run: npm install -g @anthropic-ai/claude-code
+      - run: claude plugin validate --strict .
