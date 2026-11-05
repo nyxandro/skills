@@ -141,7 +141,7 @@
     {
       "name": "materials-intake",
       "displayName": "Materials Intake",
-      "description": "Take in a project's incoming materials: find what is new, file it in inbox/, keep secrets out of git, one inventory and one digest of who decided what, contradictions and open questions",
+      "description": "Take in a project's incoming materials: find what is new, file it in inbox/, keep secrets out of git, one inventory of what is there and what it says, with decisions, contradictions and open questions",
       "category": "productivity",
       "homepage": "https://github.com/nyxandro/materials-intake-skill",
       "source": {
