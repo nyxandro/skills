@@ -61,6 +61,7 @@ update. Run `claude plugin marketplace update nyxandro` and then
 | [issue-register](https://github.com/nyxandro/issue-register-skill) | Keeps the list of open problems true to the code, in one file, with only what's left to do | ![release](https://img.shields.io/github/v/release/nyxandro/issue-register-skill?label=) |
 | [session-handoff](https://github.com/nyxandro/session-handoff-skill) | Carries unfinished work to a new agent session in one document checked against the repository | ![release](https://img.shields.io/github/v/release/nyxandro/session-handoff-skill?label=) |
 | [goal-rules](https://github.com/nyxandro/goal-rules-skill) | Lets the agent finish a long `/goal` task while you're away, with recorded decisions and a stop-list | ![release](https://img.shields.io/github/v/release/nyxandro/goal-rules-skill?label=) |
+| [materials-intake](https://github.com/nyxandro/materials-intake-skill) | Takes in a project's incoming materials. Files what's new in `inbox/`, keeps secrets out of git and keeps one inventory and one digest of decisions, contradictions and open questions | ![release](https://img.shields.io/github/v/release/nyxandro/materials-intake-skill?label=) |
 
 **Domains**
 
