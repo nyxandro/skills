@@ -167,6 +167,21 @@
       "skills": [
         "./feature-blueprint"
       ]
+    },
+    {
+      "name": "owner-decisions",
+      "displayName": "Owner Decisions",
+      "description": "Settle a decision question the way you already answered a similar one: a private base of your decisions across projects, checked before the agent asks and filled from your answers",
+      "category": "productivity",
+      "homepage": "https://github.com/nyxandro/owner-decisions-skill",
+      "source": {
+        "source": "github",
+        "repo": "nyxandro/owner-decisions-skill"
+      },
+      "license": "MIT",
+      "skills": [
+        "./owner-decisions"
+      ]
     }
   ]
 }
