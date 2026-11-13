@@ -70,6 +70,7 @@
 |---|---|---|
 | [telegram-bot-development](https://github.com/nyxandro/telegram-bot-development-skill) | Telegram-боты и Mini Apps на живом Bot API, со сверкой с документацией и установленной библиотекой перед каждым вызовом | ![release](https://img.shields.io/github/v/release/nyxandro/telegram-bot-development-skill?label=) |
 | [t-invest](https://github.com/nyxandro/t-invest-skill) | Доступ к вашему брокерскому счёту Т-Инвестиций. Портфель, доходность, аналитика и сделки по вашей команде | ![release](https://img.shields.io/github/v/release/nyxandro/t-invest-skill?label=) |
+| [bitrix24-workspace](https://github.com/nyxandro/bitrix24-workspace-skill) | Доступ к вашему рабочему Битрикс24 только на чтение. Чаты, задачи, проекты, файлы, почта, календарь и итоги встреч по живым данным портала | ![release](https://img.shields.io/github/v/release/nyxandro/bitrix24-workspace-skill?label=) |
 
 В README каждого скилла сказано, что ему нужно и как им пользоваться.
 

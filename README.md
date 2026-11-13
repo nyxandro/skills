@@ -70,6 +70,7 @@ update. Run `claude plugin marketplace update nyxandro` and then
 |---|---|---|
 | [telegram-bot-development](https://github.com/nyxandro/telegram-bot-development-skill) | Telegram bots and Mini Apps against the live Bot API, checking the docs and your installed library before any call | ![release](https://img.shields.io/github/v/release/nyxandro/telegram-bot-development-skill?label=) |
 | [t-invest](https://github.com/nyxandro/t-invest-skill) | Access to your T-Invest brokerage account. Portfolio, returns, analytics and trades on your command | ![release](https://img.shields.io/github/v/release/nyxandro/t-invest-skill?label=) |
+| [bitrix24-workspace](https://github.com/nyxandro/bitrix24-workspace-skill) | Read-only access to your Bitrix24 workspace. Chats, tasks, projects, Drive files, mail, calendar and meeting summaries from the live portal | ![release](https://img.shields.io/github/v/release/nyxandro/bitrix24-workspace-skill?label=) |
 
 Each skill's README says what it needs and how to use it.
 
